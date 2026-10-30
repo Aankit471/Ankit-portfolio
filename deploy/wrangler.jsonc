@@ -1,0 +1,12 @@
+{
+  // Local-only config so the deployed Worker can be tested in workerd:
+  //   npx wrangler dev --config deploy/wrangler.jsonc
+  "name": "ankit-portfolio-local",
+  "main": "./worker.js",
+  "compatibility_date": "2026-10-30",
+  "assets": {
+    "directory": "../out",
+    "binding": "ASSETS",
+    "not_found_handling": "none"
+  }
+}
